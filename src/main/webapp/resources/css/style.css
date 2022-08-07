@@ -1,0 +1,145 @@
+html {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+	body{
+        font-family: 'Montserrat', sans-serif;font-size: 12px; font-weight: 500; line-height: 24px;
+    }
+	li{
+        list-style: none;
+    }
+	.txt-md {
+        font-size: 14px
+    }
+	.txt-l {
+        font-size: 16px
+    }
+	.txt-xl {
+        font-size: 18px
+    }
+	.txt-xxl {
+        font-size: 20px
+    }
+    
+
+    
+	#top {
+        background-color:gray; color: #fff; padding: px 10px; 
+    }
+
+    #top .container{
+        float: right;
+    }
+	#top p {
+        margin: 10px 0
+    }
+
+     .search-box {
+        
+        padding: 10px;
+        position: absolute;
+        border-radius: 40px;
+      } 
+
+
+      .search-box:hover > form .search-txt {
+        width: 200px;
+      }
+
+      .search-box:hover > form .search-btn {
+        background: #464E54;
+      }
+
+      .search-btn {
+        color: #EDEDED;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #3788c2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .search-txt {
+        float: left;
+        padding: 0;
+        background: none;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 15px;
+        line-height: 40px;
+        width: 0; 
+        transition: 0.5s; 
+      }
+    
+	.social a {
+        color: #fff; 
+        font-size: 30px;
+        padding: 0 8px; 
+        
+        
+    }
+    .social a i{
+        float: rightssss;
+    }
+	.social li:first-child a {
+        padding-left: 0
+    }
+	#top .contact {
+        float: left;
+    }
+
+	.navbar-brand img {
+     max-width: 100%;
+     height: auto;
+    }
+    .navbar-collapse {
+   margin: auto 0;
+    }
+    
+.navbar-nav{
+    display: inline-block;
+    padding-top: 15px;
+    
+    
+
+}
+
+.navbar-nav li{
+    display: inline;
+    
+    font-size: 50px;
+    margin-left: 60px;
+    
+}
+
+
+	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle {
+        background-color: transparent; border: none;
+    }
+	.navbar-toggle .icon-bar {
+        width: 29px; 
+    }
+	.navbar-default .navbar-toggle .icon-bar {
+        background-color: black
+    }
+	.navbar-toggle .icon-bar+.icon-bar { 
+        margin-top: 5px; 
+    }
+	.navbar-brand {
+        margin-right: 30px; margin-top: 10px;height: 28px;
+}
+	
+	@media (max-width:767px) {
+		#top .pull-left, #top .pull-right {width: 100%}
+		#top .pull-right p { display: table; margin: 7px auto; }
+		
+	}
