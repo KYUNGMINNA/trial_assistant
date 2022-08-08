@@ -4,11 +4,15 @@ html {
     border:0;
     outline:0;
     font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+    position: relative;
+    min-height: 100%;
+    
+    
+    
 }
 	body{
         font-family: 'Montserrat', sans-serif;font-size: 12px; font-weight: 500; line-height: 24px;
+        min-height: 100%;
     }
 	li{
         list-style: none;
@@ -116,7 +120,7 @@ html {
 .navbar-nav li{
     display: inline;
     
-    font-size: 50px;
+    font-size: 40px;
     margin-left: 60px;
     
 }
@@ -142,4 +146,152 @@ html {
 		#top .pull-left, #top .pull-right {width: 100%}
 		#top .pull-right p { display: table; margin: 7px auto; }
 		
+
+        @media (max-width:767px){
+            #footer h5 {
+            padding-left: 0;
+            border-left: transparent;
+            padding-bottom: 0px;
+            margin-bottom: 10px;
+        }
 	}
+}
+
+
+
+
+
+
+
+/* Footer */
+
+section {
+    padding: 20px 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+     
+    
+    
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+   
+}
+#footer {
+    background: gray; 
+    font-size: 20px;
+    padding: 20px 0px;
+    
+    
+    
+    
+}
+
+#footer .system h4{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold; 
+}
+#footer .system li{
+    
+    padding: 3px;
+    color: white;
+    display: inline-block;
+    
+}
+
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.intro{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 30px;
+    
+    
+}
+
+
+
+
+.address span, 
+.menu span {
+   color: #FFF; 
+   font-weight: bold; 
+   border-bottom: 1px solid #c7c7c7; 
+   padding: 10px 0px;
+   display: block;
+   text-transform: uppercase;
+   font-size: 16px;
+   letter-spacing: 3px;
+}
+ 
+.address li a, 
+.menu li a {
+    color: #FFF;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.address li, 
+.menu li {
+    margin: 20px 0px;
+    list-style: none;
+}
+
+.address li a:hover, 
+.menu li a:hover {
+    color: #da3e44;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+}
+
+.address .fa {
+    color: #da3e44;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+    
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+    
+}
+
+#footer ul.social li a,
+#footer  li p{
+	color:#ffffff;
+   
+    
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+
+
+
+

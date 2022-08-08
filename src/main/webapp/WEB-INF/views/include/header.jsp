@@ -26,12 +26,12 @@
 <body>
 	 <!------ Header ---------->
 
-    <header>
+      <header>
         
-
+      <div class="wrap" style="min-width: 1400px;">
         <div id="top">
             <div class="clearfix">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="search-box">
                     <form action="." method="post">
                       <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요">
@@ -53,7 +53,7 @@
             </div>
         </div>
         </div>
-    
+    	
          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="100">
              <nav class="navbar navbar-default">
                   <div class="container-fluid">
@@ -80,11 +80,11 @@
 
              
         </div>
+      </div>
 
 
 
     </header>
-
 
 
 </body>
