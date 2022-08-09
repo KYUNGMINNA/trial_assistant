@@ -9,7 +9,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>header</title>
+    <title>list</title>
     
     
 
@@ -36,7 +36,7 @@
 
 
 
-    <aside>
+ <aside>
 
 
         사이드바 
@@ -47,8 +47,33 @@
     <div class="board_wrap">
         <div class="board_title">
             <strong>공지사항</strong>
-            <p>공지사항 설명</p>
-        </div>
+            <ul class="breadcrumb">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li class="active">공지사항</li>
+              </ul>
+              
+           
+           <div class="row">
+                
+                <div class="col-md-6 col-sm-5 col-xs-12">
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-12"><select class="form-control">
+              <option>일반</option>
+              <option>기관</option>
+                   
+         
+                </select>
+            
+               </div> 
+               
+            
         <div class="board_list_wrap">
             <div class="board_list">
 
@@ -78,7 +103,7 @@
 
             <div>
                 <div class="num">3</div>
-                <div class="title"><a href="#">글 제목이 들어갑니다.</a></div>
+                <div class="title"><a href="view.html">글 제목이 들어갑니다.</a></div>
                 <div class="writer">admin</div>
                 <div class="date">2022.08.08</div>
                 <div class="count">12</div>
@@ -115,7 +140,8 @@
             
             <div class="bt_wrap">
 
-                <a href="#" class="on">등록</a>
+                <a href="#" class="btn btn-primary">등록</a>
+                
                 <!-- <a href="#">수정</a> -->
 
             </div>

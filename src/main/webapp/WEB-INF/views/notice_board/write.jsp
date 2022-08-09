@@ -34,7 +34,7 @@
 
 
 
-    <aside>
+   <aside>
 
 
         사이드바 
@@ -42,11 +42,14 @@
 
     </aside>
 
-    
-     <div class="board_wrap">
+    <div class="board_wrap">
         <div class="board_title">
             <strong>공지사항</strong>
-            <p>공지사항 설명</p>
+            <ul class="breadcrumb">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li class="active">공지사항</li>
+              </ul>
         </div>
         <div class="board_write_wrap">
             <div class="board_write">
@@ -62,8 +65,11 @@
                     <dd><input type="text" placeholder="작성자 입력"></dd>
                 </dl>
                 <dl>
-                    <dt>비밀번호</dt>
-                    <dd><input type="password" placeholder="비밀번호 입력"></dd>
+                    <dt>파일</dt>
+                    <dd><form name="form_file" action="" method="post" enctype="multipart/form-data">
+                        <input type="file" class="gallery-file" multiple/>
+                    </form></dd>
+                   
                 </dl>
                 </div>
                 <div class="cont"> 
@@ -75,8 +81,9 @@
             
             <div class="bt_wrap">
 
-                <a href="#" class="on">등록</a>
-                <a href="#">취소</a>
+                <a href="#" class="btn btn-primary">등록</a>
+                <a href="#" class="btn btn-primary">취소</a>
+                
 
             </div>
 

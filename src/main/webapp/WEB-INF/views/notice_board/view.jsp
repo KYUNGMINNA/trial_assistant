@@ -34,7 +34,7 @@
 
 
 
-    <aside>
+   <aside>
 
 
         사이드바 
@@ -42,12 +42,18 @@
 
     </aside>
 
-    
     <div class="board_wrap">
         <div class="board_title">
             <strong>공지사항</strong>
-            <p>공지사항 설명</p>
+            <ul class="breadcrumb">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li class="active">공지사항</li>
+              </ul>
+          
         </div>
+
+        
         <div class="board_view_wrap">
             <div class="board_view">
                 <div class="title">
@@ -73,19 +79,19 @@
                     </dl>
                 </div>
                 <div class="cont">
-                    글 내용이 들어갑니다 <br>
-                    글 내용이 들어갑니다 <br>
-                    글 내용이 들어갑니다 <br>
-                    글 내용이 들어갑니다 <br> 
-                    글 내용이 들어갑니다 <br>
-                    글 내용이 들어갑니다 <br>
+                    글 내용이 들어갑니다 
+                    글 내용이 들어갑니다 
+                    글 내용이 들어갑니다
+                    글 내용이 들어갑니다 
+                    글 내용이 들어갑니다
+                    글 내용이 들어갑니다 
                 </div>
 
             </div>
             <div class="bt_wrap">
 
-                <a href="#" class="on">목록</a>
-                <a href="#">수정</a>
+                <a href="#" class="btn btn-primary">목록</a>
+                <a href="#" class="btn btn-primary">수정</a>
             </div>
          </div>   
     </div>

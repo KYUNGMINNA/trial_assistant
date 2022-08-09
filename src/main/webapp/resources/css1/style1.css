@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+/* 공백과 줄바꿈을 지정하는 명령어  */
+.normal {white-space:normal;}
+.nowarp{white-space:nowrap;}
+.pre{white-space:pre;}
+.prewrap{white-space:pre-wrap;}
+.preline{white-space:pre-line;}
 
 html{
     font-size: 10px;
@@ -17,13 +23,13 @@ a{
 }
 
 .board_wrap{
-    width: 1000px;
-    margin: 100px auto;
+    width: 1200px;
+    margin: 200px auto;
     padding-left: 200px;
 }
 
 .board_title{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .board_title strong{
@@ -35,10 +41,15 @@ a{
     font-size: 1.4rem;
 }
 
+
+    
+
+
 .bt_wrap{
     margin-top: 30px;
     text-align: center;
     font-size: 0;
+    
 }
 
 .bt_wrap a{
@@ -48,6 +59,8 @@ a{
     border: 1px solid #000;
     border-radius: 2px;
     font-size: 1.4rem;
+    margin: 10px;
+   
 }
 
 .bt_wrap a:first-child{
@@ -59,6 +72,12 @@ a{
     color: #fff;
     padding: 10px;
 }
+
+.board_list_wrap{
+    margin-top: 100px;
+}
+
+
 
 .board_list{
     width: 100%;
@@ -244,6 +263,7 @@ a{
 
 }
 
+
 .board_write .title dl {
     font-size: 0;
 }
@@ -253,6 +273,8 @@ a{
     width: 50%;
     vertical-align: middle;
 }
+
+
 
 
 .board_write .title dt, 
@@ -302,6 +324,6 @@ a{
 aside{
     float: left;
     width: 20%;
-    height: 1500px;
+    height: 1300px;
     background: green;
 }
