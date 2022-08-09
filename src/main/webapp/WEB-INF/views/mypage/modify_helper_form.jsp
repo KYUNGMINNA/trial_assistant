@@ -30,6 +30,9 @@
 </head>
 
 <body>
+
+	<%@ include file="include/header.jsp" %>
+
     <div class="container">
         <form action="">
             <h1>조력자 신청서 수정</h1>
@@ -218,6 +221,9 @@
             <input type="submit" value="수정" class="btn btn-primary center-block btn-block" id="">
         </form>
     </div>
+    
+    <%@ include file="include/footer.jsp" %>
+    
 </body>
 
 </html>
