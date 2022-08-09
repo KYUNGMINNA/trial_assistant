@@ -22,10 +22,11 @@
     <!--개인 디자인 추가-->
     <link href="${pageContext.request.contextPath }/resources/css/style.css" rel="stylesheet">
     <script src="${pageContext.request.contextPath }/resources/js/bootstrap.js"></script>
+     <script src="${pageContext.request.contextPath }/resources/js/main.js"></script>
 </head>
 <body>
 	 <!-- ----------- Footer ---------------------->
-	<section id="footer">
+	<footer>
 		<div class="container-fluid">
 			
 			<div class="row">
@@ -107,7 +108,7 @@
 				<hr>
 			</div>	
 		</div>
-	</section>
+	</footer> 
 	<!------------ Footer ------------->
 
 
