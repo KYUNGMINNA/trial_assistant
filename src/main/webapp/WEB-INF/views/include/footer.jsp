@@ -20,7 +20,7 @@
     <link href="${pageContext.request.contextPath }/resources/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!--개인 디자인 추가-->
-    <link href="${pageContext.request.contextPath }/resources/css/css/style.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath }/resources/css/style.css" rel="stylesheet">
     <script src="${pageContext.request.contextPath }/resources/js/bootstrap.js"></script>
      <script src="${pageContext.request.contextPath }/resources/js/main.js"></script>
 </head>
