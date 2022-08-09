@@ -10,7 +10,7 @@
         		
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <property name="context-root" value="myweb"/>
-        <property name="java-output-path" value="/Trial/target/classes"/>
+        <property name="java-output-path" value="/tial_project/target/classes"/>
         	
     </wb-module>
     
