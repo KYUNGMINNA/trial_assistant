@@ -29,25 +29,8 @@
     </style>
 </head>
 
-<!-- ajax, json 더미데이터 사용 전까지는 하드한 더미 데이터로 그냥 displaying 하기 -->
 <body>
-
-	<%@ include file="include/header.jsp" %>
-    
-    <div class="col-md-2">
-		<div class="panel panel-info">
-			<div class="panel-heading">
-				<h3 class="panel-title">마이페이지</h3>
-			</div>
-			<ul class="list-group">
-			<li class="list-group-item"><a href="#">나의 정보 수정</a></li>
-			<li class="list-group-item"><a href="#">나의 접수 내역 조회</a></li>
-			<li class="list-group-item"><a href="#">나의 접수 내역 상세 조회</a></li>
-			</ul>
-		</div>
-	</div>
-    
-    <div class="container col-md-10">
+    <div class="container">
         <h4>나의 접수 내역 상세 조회</h4>
         <table class="table table-bordered">
             <tbody>
@@ -109,13 +92,134 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">평정기준표</h4>
+                        <h4 class="modal-title" style="text-align: center;">평정기준표</h4>
                     </div>
                     <div class="modal-body">
                         <table class="table table-bordered">
                             <tbody>
-                                <th>가나다</th>
-                                <td>하이요</td>
+                                <tr>
+                                    <th rowspan="2">평정항목</th>
+                                    <th rowspan="2">세부항목</th>
+                                    <th rowspan="2">배점</th>
+                                    <th colspan="3">내용</th>
+                                </tr>
+                                <tr>
+                                    <th>구분</th>
+                                    <th>기준</th>
+                                    <th>배점</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="9">기본평정</td>
+                                    <td rowspan="6">경력점수</td>
+                                    <td rowspan="6"></td>
+                                    <td rowspan="3">통산경력</td>
+                                    <td>○10년 이상</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>●5~10 년</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>○5년 미만</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">관내경력</td>
+                                    <td>○10년 이상</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>○5~10 년</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>●5년 미만</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">사무소 소재지</td>
+                                    <td rowspan="2"></td>
+                                    <td colspan="2">□관내사무소</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">■관외사무소</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <!-- 나중에 여기 사무소 주소지 동적으로 뿌려야 함 -->
+                                    <td colspan="5">신청인 사무소주소지 : </td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="3">인성평가</td>
+                                    <td rowspan="3"></td>
+                                    <td rowspan="3"></td>
+                                    <td colspan="2">○우수</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">○평균</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">○미흡</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">면접</td>
+                                    <td rowspan="2"></td>
+                                    <td rowspan="2"></td>
+                                    <td colspan="2">○우수</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">○미흡</td>
+                                    <td></td>
+                                </tr>
+                                <!-- 자격증 점수 (최대 4개) -->
+                                <tr>
+                                    <td rowspan="4">자격증점수</td>
+                                    <td rowspan="4"></td>
+                                    <td rowspan="4"></td>
+                                    <td colspan="2"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td></td>
+                                </tr>
+                                <!-- 합계 -->
+                                <tr>
+                                    <td colspan="2">합계</td>
+                                    <td></td>
+                                    <td colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">감정인 평정표</td>
+                                    <td></td>
+                                    <td colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <td>조정평점</td>
+                                    <td>심사위원 추천</td>
+                                    <td></td>
+                                    <td colspan="3">최대 7점</td>
+                                </tr>
+                                <!-- 최종점수 동적으로 얻어와 뿌리기 -->
+                                <tr>
+                                    <td colspan="2">최종점수 (종합)</td>
+                                    <td></td>
+                                    <td colspan="3">--점 / 총점</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -128,13 +232,10 @@
         </div>
 
         <h4>평정기준표 코멘트</h4>
-        <textarea class="form-control col-sm-5 rows-5">
+        <textarea class="form-control col-sm-5" rows-5>
 
         </textarea>
     </div>
-
-	<%@ include file="include/footer.jsp" %>
-
 </body>
 
 </html>
