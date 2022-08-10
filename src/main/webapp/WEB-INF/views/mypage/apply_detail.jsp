@@ -31,7 +31,7 @@
 
 <body>
 
-	<%@ include file="include/header.jsp" %>
+	<%@ include file="../include/header.jsp" %>
 
     <div class="container">
         <h4>나의 접수 내역 상세 조회</h4>
@@ -240,7 +240,7 @@
         </textarea>
     </div>
     
-    <%@ include file="include/footer.jsp" %>
+    <%@ include file="../include/footer.jsp" %>
     
 </body>
 

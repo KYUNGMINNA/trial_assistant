@@ -31,7 +31,7 @@
 
 <body>
 
-	<%@ include file="include/header.jsp" %>
+	<%@ include file="../include/header.jsp" %>
 
     <div class="container">
         <form action="">
@@ -222,7 +222,7 @@
         </form>
     </div>
     
-    <%@ include file="include/footer.jsp" %>
+    <%@ include file="../include/footer.jsp" %>
     
 </body>
 
