@@ -2,5 +2,9 @@
     pageEncoding="UTF-8"%>
     
     <%@ include file="include/header.jsp" %>
+   
+   
+   <%@ include file="notice_board/list.jsp" %>
+   
     <%@ include file="include/footer.jsp" %>
     

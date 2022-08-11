@@ -16,8 +16,13 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
                 
         <property name="context-root" value="myweb"/>
+
+        	
+
+
         <property name="java-output-path" value="/trial_assistant/target/classes"/>
                 	
+
     
     </wb-module>
         
