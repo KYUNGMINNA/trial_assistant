@@ -56,10 +56,11 @@
 
 	<%@ include file="../include/header.jsp" %>
 
-	 <section>
+
 
         <div class="container-fluid">
             <div class="row">
+            	<div class="col-md-2"></div>
                 <div class="col-md-8">
 
            <form action="">
@@ -90,7 +91,7 @@
                         </tr>
                         <tr>
                             <td>내용</td>
-                            <td> <textarea name="" id="" cols="75" rows="3" placeholder="내용 입력"></textarea></td>
+                            <td> <textarea name="" id="" cols="75" rows="3" placeholder="내용 입력" class="form-control"></textarea></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -109,9 +110,10 @@
           
           
         </div>
+        <div class="col-md-2"></div>
         </div>
         </div>
-        </section>
+
     <%@ include file="../include/footer.jsp" %>
     
 </body>
