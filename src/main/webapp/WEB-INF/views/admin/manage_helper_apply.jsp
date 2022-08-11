@@ -3,12 +3,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 접수 내역 상세 조회</title>
+    <title>나의 접수 내역 조회</title>
 
     <!-- 부트스트랩 3.1.1 가져오기 -->
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/resources/css/bootstrap.css">
@@ -34,7 +33,7 @@
 	<%@ include file="/WEB-INF/views/include/header.jsp" %>
 
     <div class="container">
-        <h4>나의 접수 내역 상세 조회</h4>
+        <h4>조력자 신청자 상세 정보 조회</h4>
         <table class="table table-bordered">
             <tbody>
                 <tr>
@@ -82,7 +81,13 @@
                             조회</button>
                     </td>
                     <th>신청자 상태</th>
-                    <td>적격</td>
+                    <td>
+                        <select name="" id="" class="form-control">
+                            <option>적격</option>
+                            <option>부적격</option>
+                            <option>보완</option>
+                        </select>
+                    </td>
                 </tr>
             </tbody>
         </table>
@@ -117,38 +122,38 @@
                                     <td rowspan="6"></td>
                                     <td rowspan="3">통산경력</td>
                                     <td>○10년 이상</td>
-                                    <td></td>
+                                    <td><input type="radio" id="5" name="totalCareer">5</td>
                                 </tr>
                                 <tr>
                                     <td>●5~10 년</td>
-                                    <td></td>
+                                    <td><input type="radio" id="4" name="totalCareer">4</td>
                                 </tr>
                                 <tr>
                                     <td>○5년 미만</td>
-                                    <td></td>
+                                    <td><input type="radio" id="3" name="totalCareer">3</td>
                                 </tr>
                                 <tr>
                                     <td rowspan="3">관내경력</td>
                                     <td>○10년 이상</td>
-                                    <td></td>
+                                    <td><input type="radio" id="5" name="innerCareer">5</td>
                                 </tr>
                                 <tr>
                                     <td>○5~10 년</td>
-                                    <td></td>
+                                    <td><input type="radio" id="4" name="innerCareer">4</td>
                                 </tr>
                                 <tr>
                                     <td>●5년 미만</td>
-                                    <td></td>
+                                    <td><input type="radio" id="3" name="innerCareer">3</td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2">사무소 소재지</td>
                                     <td rowspan="2"></td>
                                     <td colspan="2">□관내사무소</td>
-                                    <td></td>
+                                    <td><input type="radio" id="5" name="officeLocation">5</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">■관외사무소</td>
-                                    <td></td>
+                                    <td><input type="radio" id="3" name="officeLocation">3</td>
                                 </tr>
                                 <tr>
                                     <!-- 나중에 여기 사무소 주소지 동적으로 뿌려야 함 -->
@@ -159,26 +164,26 @@
                                     <td rowspan="3"></td>
                                     <td rowspan="3"></td>
                                     <td colspan="2">○우수</td>
-                                    <td></td>
+                                    <td><input type="radio" id="5" name="personalityEval">5</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">○평균</td>
-                                    <td></td>
+                                    <td><input type="radio" id="4" name="personalityEval">4</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">○미흡</td>
-                                    <td></td>
+                                    <td><input type="radio" id="3" name="personalityEval">3</td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2">면접</td>
                                     <td rowspan="2"></td>
                                     <td rowspan="2"></td>
                                     <td colspan="2">○우수</td>
-                                    <td></td>
+                                    <td><input type="radio" id="5" name="interview">5</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2">○미흡</td>
-                                    <td></td>
+                                    <td><input type="radio" id="3" name="interview">3</td>
                                 </tr>
                                 <!-- 자격증 점수 (최대 4개) -->
                                 <tr>
@@ -214,7 +219,7 @@
                                 <tr>
                                     <td>조정평점</td>
                                     <td>심사위원 추천</td>
-                                    <td></td>
+                                    <td><input type="number" min="0" max="7"></td>
                                     <td colspan="3">최대 7점</td>
                                 </tr>
                                 <!-- 최종점수 동적으로 얻어와 뿌리기 -->
@@ -227,6 +232,7 @@
                         </table>
                     </div>
                     <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">수정</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
                     </div>
                 </div>
@@ -234,10 +240,14 @@
             </div>
         </div>
 
-        <h4>평정기준표 코멘트</h4>
-        <textarea class="form-control col-sm-5" rows-5>
+        <h4>보완 요구사항 작성</h4>
+        <textarea class="form-control col-sm-5" rows-5 placeholder="보완 요구사항 입력"></textarea>
 
-        </textarea>
+        <div class="text-center">
+            <button type="button" class="btn btn-primary" style="margin:0.5em">저장</button>
+            <button type="button" class="btn btn-danger" style="margin:0.5em">삭제</button>
+            <button type="button" class="btn btn-default" style="margin:0.5em">목록</button>
+        </div>
     </div>
     
     <%@ include file="/WEB-INF/views/include/footer.jsp" %>
