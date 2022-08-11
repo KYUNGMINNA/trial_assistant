@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-    
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,8 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>list</title>
-    
-    
+
+
 
 	<%-- 
 		${pageContext.request.contextPath} == <c:url value='' />
@@ -55,7 +55,7 @@ crossorigin = "anonymous"></script>
                 <li><a href="#">고객센터</a></li>
                 <li class="active">공지사항</li>
               </ul>
-              
+
            <div class="container">
               <div class="row">    
                 <div class="col-xs-4 col-xs-offset-3">
@@ -75,9 +75,9 @@ crossorigin = "anonymous"></script>
                         </span>
                     </div>
                 </div>
-           
-               
-            
+
+
+
         <div class="board_list_wrap">
             <div class="board_list">
 
@@ -141,13 +141,13 @@ crossorigin = "anonymous"></script>
                 <a href="#" class="bt next">></a>
                 <a href="#" class="bt last">>></a>
             </div>
-            
+
             <div class="bt_wrap">
 
                 <button type="button" class= " btn btn-info btn-md "
                 data-toggle="modal" href="#myModal5"> 등록 </button>
-                
-               
+
+
 
             </div>
 
@@ -155,14 +155,14 @@ crossorigin = "anonymous"></script>
                 <div class="modal-dialog modal-sm ">
                     <div class="modal-content">
                       <div class="modal-header">
-                       
+
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                       </div><div class="container"></div>
                       <div class="modal-body">
                         <p>
                            정말로 등록하시겠습니까 ?
                         </p>
-                        
+
                       </div>
                       <div class="modal-footer">
                         <a href="#" data-dismiss="modal" class="btn btn-default">닫기</a>
@@ -172,8 +172,8 @@ crossorigin = "anonymous"></script>
                     </div>
                   </div>
               </div>
-              
-            
+
+
               <%--   <div class="modal" id="myModal6" data-backdrop="static">
                 <div class="modal-dialog ">
                     <div class="modal-content">

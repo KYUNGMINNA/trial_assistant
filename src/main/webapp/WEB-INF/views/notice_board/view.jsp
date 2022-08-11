@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-    
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,26 +10,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>view</title>
-    
-    
+
+
 
 	<%-- 
 		${pageContext.request.contextPath} == <c:url value='' />
 	 --%>
     <link href="${pageContext.request.contextPath }/resources/css/bootstrap.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath }/resources/css/bootstrap.min.css" rel="stylesheet">
-   
+
     <!--개인 디자인 추가-->
     <link href="${pageContext.request.contextPath }/resources/css/style.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath }/resources/css1/style1.css" rel="stylesheet">
     <script src="${pageContext.request.contextPath }/resources/js/bootstrap.js"></script>
-    
+
     <script
 src="https://code.jquery.com/jquery-3.6.0.min.js" 
 integrity ="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 crossorigin = "anonymous"></script>
 
-    
+
 </head>
 <body>
 	 <section>
@@ -57,10 +57,10 @@ crossorigin = "anonymous"></script>
                 <li><a href="#">고객센터</a></li>
                 <li class="active">공지사항</li>
               </ul>
-          
+
         </div>
 
-        
+
         <div class="board_view_wrap">
             <div class="board_view">
                 <div class="title">
@@ -99,30 +99,30 @@ crossorigin = "anonymous"></script>
 
                 <button type="button" class="butt1 btn btn-info btn-md"
                 > 목록</button>
-               
+
                 <button type="button" class="butt2 btn btn-info btn-md"
                 data-toggle="modal" href = "#myModal3"> 삭제</button>
-               
+
                 <button type="button" class="butt3 btn btn-info btn-md"
                 > 수정</button>
                 </div>
                 </div>
-        
 
-               
-                  
+
+
+
                   <div class="modal" id="myModal3">
                     <div class="modal-dialog modal-sm">
                         <div class="modal-content">
                           <div class="modal-header">
-                           
+
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                           </div><div class="container"></div>
                           <div class="modal-body">
                             <p>
                                정말로 삭제하시겠습니까 ?
                             </p>
-                            
+
                           </div>
                           <div class="modal-footer">
                             <a href="#" data-dismiss="modal" class="btn btn-default">닫기</a>
@@ -132,8 +132,8 @@ crossorigin = "anonymous"></script>
                         </div>
                       </div>
                   </div>
-                  
-                  
+
+
                 <%--   <div class="modal" id="myModal4" data-backdrop="static">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -165,22 +165,22 @@ crossorigin = "anonymous"></script>
             <div class="next_1">
             <div class="next"><a href="#"><i class="fa-solid fa-angle-up"></i> 다음 글 : 글 제목이 들어갑니다.   </a>
 
-               
+
         </div>
     </div>
      </div>
      <div class="prev_foot">
         <div class="prev_row">
             <div class="foot_1">
-                
+
             <div class="before"><a href="#"><i class="fa-solid fa-angle-down"></i>이전 글 : 글 제목이 들어갑니다.  </a>
 
             </div>
         </div>
     </div>
      </div>
-      
-     
+
+
 
 </div>
 </body>

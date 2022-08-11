@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-    
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,26 +10,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>view</title>
-    
-    
+
+
 
 	<%-- 
 		${pageContext.request.contextPath} == <c:url value='' />
 	 --%>
     <link href="${pageContext.request.contextPath }/resources/css/bootstrap.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath }/resources/css/bootstrap.min.css" rel="stylesheet">
-   
+
     <!--개인 디자인 추가-->
     <link href="${pageContext.request.contextPath }/resources/css/style.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath }/resources/css1/style1.css" rel="stylesheet">
     <script src="${pageContext.request.contextPath }/resources/js/bootstrap.js"></script>
-    
+
     <script
 src="https://code.jquery.com/jquery-3.6.0.min.js" 
 integrity ="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 crossorigin = "anonymous"></script>
 
-    
+
 </head>
 <body>
 	<section>
@@ -106,14 +106,14 @@ crossorigin = "anonymous"></script>
         <div class="modal-dialog modal-sm ">
             <div class="modal-content">
               <div class="modal-header">
-               
+
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
               </div><div class="container"></div>
               <div class="modal-body">
                 <p>
                    정말로 등록하시겠습니까 ?
                 </p>
-                
+
               </div>
               <div class="modal-footer">
                 <a href="#" data-dismiss="modal" class="btn btn-default">닫기</a>
@@ -123,8 +123,8 @@ crossorigin = "anonymous"></script>
             </div>
           </div>
       </div>
-      
-    
+
+
         <%--  <div class="modal" id="myModal6" data-backdrop="static">
         <div class="modal-dialog ">
             <div class="modal-content">
@@ -147,4 +147,4 @@ crossorigin = "anonymous"></script>
 
 </html>
 
- <script src="${pageContext.request.contextPath }/resources/js1/Popup.js"></script>
+ <script src="${pageContext.request.contextPath }/resources/js1/Popup.js"></script> 

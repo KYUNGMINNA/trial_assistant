@@ -28,7 +28,7 @@
 </head>
 <body>
 
-	<%@ include file="include/header.jsp" %>
+	<%@ include file="/WEB-INF/views/include/header.jsp" %>
 
 	<div class="col-md-2">
 		<div class="panel panel-info">
@@ -121,7 +121,7 @@
         </table>
     </div>
     
-    <%@ include file="include/footer.jsp" %>
+    <%@ include file="/WEB-INF/views/include/footer.jsp" %>
     
 </body>
 </html>
