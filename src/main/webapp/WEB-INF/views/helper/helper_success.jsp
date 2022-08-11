@@ -1,6 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 
 <!DOCTYPE html>
 <html>
@@ -23,7 +24,7 @@
 		rel="stylesheet">
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<!--°³ÀÎ µðÀÚÀÎ Ãß°¡-->
+	<!--ê°œì¸ ë””ìžì¸ ì¶”ê°€-->
 	<link
 		href="${pageContext.request.contextPath }/resources/css/choiStyle.css"
 		rel="stylesheet">
@@ -35,34 +36,33 @@
 <body>
 	<%@ include file="../include/header.jsp"%>
 
-	<section class="clearfix">
-        
-        <aside>
-            	¸Þ´º ¿¹½Ã
-        </aside>
+	
 
         <div class="container-fluid helper-suc-wrap">
             <div class="helper-suc-title">
                 <h1>
-                    <strong>(ÀÌ¸§)</strong>´Ô ½ÅÃ»ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.
+                    <strong>(ì´ë¦„)</strong>ë‹˜ ì‹ ì²­ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.
                 </h1>
             </div>
             <div class="helper-suc-subtitle">
                 <span>
                     <!--<fmt:formatDate value="#" pattern="yyyy-MM-dd HH:mm" />-->
-                    2022-08-08 00½Ã 00ºÐ¿¡ ½ÅÃ»ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.
+                    2022-08-08 00ì‹œ 00ë¶„ì— ì‹ ì²­ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.
                 </span>
             </div>
             <div class="btn-wrap">
                 <div class="btn-group btn-group-lg" role="group" aria-label="...">
-                    <button type="button" class="btn btn-default btn-primary">¸ÞÀÎ&nbsp; È­¸é</button>
-                    <button type="button" class="btn btn-default btn-info">¸¶ÀÌÆäÀÌÁö</button>
+                    <button type="button" class="btn btn-default btn-primary">ë©”ì¸&nbsp; í™”ë©´</button>
+                    <button type="button" class="btn btn-default btn-info">ë§ˆì´íŽ˜ì´ì§€</button>
                   </div>
             </div>
 
         </div>
         
-    </section>
+    
+    
+    <%@ include file="../include/footer.jsp"%>
+    
 
 
 </body>

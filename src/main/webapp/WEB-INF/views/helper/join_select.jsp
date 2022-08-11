@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@
 	rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!--°³ÀÎ µðÀÚÀÎ Ãß°¡-->
+<!--ê°œì¸ ë””ìžì¸ ì¶”ê°€-->
 <link
 	href="${pageContext.request.contextPath }/resources/css/choiStyle.css"
 	rel="stylesheet">
@@ -34,11 +34,9 @@
 <body>
 	<%@ include file="../include/header.jsp"%>
 
-	<hr>
-
 	<section class="container-fluid join-wrap">
-		<h1 class="join-title">È¸ ¿ø °¡ ÀÔ</h1>
-		<span>º»ÀÎÀÌ ÇØ´çÇÏ´Â È¸¿ø°¡ÀÔ À¯ÇüÀ» ¼±ÅÃÇØ ÁÖ¼¼¿ä.</span> <br>
+		<h1 class="join-title">íšŒ ì› ê°€ ìž…</h1>
+		<span>ë³¸ì¸ì´ í•´ë‹¹í•˜ëŠ” íšŒì›ê°€ìž… ìœ í˜•ì„ ì„ íƒí•´ ì£¼ì„¸ìš”.</span> <br>
 		<br>
 
 		<div class="join-select">
@@ -48,7 +46,7 @@
 					<div>
 						<img width="100px" src="${pageContext.request.contextPath }/resources/img/user.svg" alt="user">
 					</div>
-					°³ ÀÎ
+					ê°œ ì¸
 				</button>
 				<button id="join-com-btn" type="button"
 					class="btn btn-default btn-info">
@@ -56,24 +54,29 @@
 						<img width="100px" src="${pageContext.request.contextPath }/resources/img/company.svg"
 							alt="company">
 					</div>
-					±â °ü
+					ê¸° ê´€
 				</button>
 			</div>
 		</div>
-	</section>
-
+	
 	<hr>
 
 	<script>
-        // °³ÀÎ È¸¿ø°¡ÀÔ ¹öÆ° ÀÌº¥Æ®
+        // ê°œì¸ íšŒì›ê°€ìž… ë²„íŠ¼ ì´ë²¤íŠ¸
         $('#join-user-btn').on('click', function () {
-            alert("Á¤¸» °³ÀÎ È¸¿ø°¡ÀÔÀ» ÁøÇàÇÏ½Ã°Ú½À´Ï±î?");
+            alert("ì •ë§ ê°œì¸ íšŒì›ê°€ìž…ì„ ì§„í–‰í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
         });
-        // ±â°ü È¸¿ø°¡ÀÔ ¹öÆ° ÀÌº¥Æ®
+        // ê¸°ê´€ íšŒì›ê°€ìž… ë²„íŠ¼ ì´ë²¤íŠ¸
         $('#join-com-btn').on('click', function () {
-            alert("Á¤¸» ±â°ü È¸¿ø°¡ÀÔÀ» ÁøÇàÇÏ½Ã°Ú½À´Ï±î?");
+            alert("ì •ë§ ê¸°ê´€ íšŒì›ê°€ìž…ì„ ì§„í–‰í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
         });
     </script>
+    
+    
+    
+    <%@ include file="../include/footer.jsp"%>
+    
+    </section>
 
 </body>
 </html>

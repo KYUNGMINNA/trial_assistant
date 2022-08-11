@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@
 	rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!--°³ÀÎ µðÀÚÀÎ Ãß°¡-->
+<!--ê°œì¸ ë””ìžì¸ ì¶”ê°€-->
 <link
 	href="${pageContext.request.contextPath }/resources/css/choiStyle.css"
 	rel="stylesheet">
@@ -35,41 +35,44 @@
 	<%@ include file="../include/header.jsp"%>
 	
 
-	<!-- ¸ð´ÞÀ» ¿­±â À§ÇÑ ¹öÆ° (Á¶·ÂÀÚ ½ÅÃ» ¿Ï·á ¹öÆ°À¸·Î Ã³¸® ¿¹Á¤) -->
-    <button type="button" class="btn btn-primary btn-lg" id="openModalBtn">Á¶·ÂÀÚ ½ÅÃ» ¹öÆ°</button>
+	<!-- ëª¨ë‹¬ì„ ì—´ê¸° ìœ„í•œ ë²„íŠ¼ (ì¡°ë ¥ìž ì‹ ì²­ ì™„ë£Œ ë²„íŠ¼ìœ¼ë¡œ ì²˜ë¦¬ ì˜ˆì •) -->
+    <button type="button" class="btn btn-primary btn-lg" id="openModalBtn">ì¡°ë ¥ìž ì‹ ì²­ ë²„íŠ¼</button>
 
-    <!-- ¸ð´Þ ¿µ¿ª -->
+    <!-- ëª¨ë‹¬ ì˜ì—­ -->
     <div id="modalBox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog " role="document">
             <div class="modal-content">
                 <div class="modal-header"> <button type="button" class="close" data-dismiss="modal"
-                        aria-label="Close"><span aria-hidden="true">¡¿</span></button>
+                        aria-label="Close"><span aria-hidden="true">Ã—</span></button>
                     <h4 class="modal-title" id="myModalLabel">
-                        <strong>(ÀÌ¸§)</strong>´Ô ½ÅÃ»ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.
+                        <strong>(ì´ë¦„)</strong>ë‹˜ ì‹ ì²­ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.
                     </h4>
                 </div>
                 <div class="modal-body">
                     <!--<fmt:formatDate value="#" pattern="yyyy-MM-dd HH:mm" />-->
-                    2022-08-08 00½Ã 00ºÐ¿¡ ½ÅÃ»ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.
+                    2022-08-08 00ì‹œ 00ë¶„ì— ì‹ ì²­ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.
                 </div>
                 <div class="modal-footer"> 
-                    <button type="button" class="btn btn-primary" id="#">¸ÞÀÎ È­¸é</button> 
-                    <button type="button" class="btn btn-default" id="#">¸¶ÀÌÆäÀÌÁö</button> 
+                    <button type="button" class="btn btn-primary" id="#">ë©”ì¸ í™”ë©´</button> 
+                    <button type="button" class="btn btn-default" id="#">ë§ˆì´íŽ˜ì´ì§€</button> 
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-        // ¸ð´Þ ¹öÆ°¿¡ ÀÌº¥Æ®¸¦ °Ç´Ù.  
+        // ëª¨ë‹¬ ë²„íŠ¼ì— ì´ë²¤íŠ¸ë¥¼ ê±´ë‹¤.  
         $('#openModalBtn').on('click', function () {
             $('#modalBox').modal('show');
         });
-        // ¸ð´Þ ¾ÈÀÇ Ãë¼Ò ¹öÆ°¿¡ ÀÌº¥Æ®¸¦ °Ç´Ù.  
+        // ëª¨ë‹¬ ì•ˆì˜ ì·¨ì†Œ ë²„íŠ¼ì— ì´ë²¤íŠ¸ë¥¼ ê±´ë‹¤.  
         $('#closeModalBtn').on('click', function () {
             $('#modalBox').modal('hide');
         });
     </script>
+    
+    <%@ include file="../include/footer.jsp"%>
+    
 
 </body>
 </html>
