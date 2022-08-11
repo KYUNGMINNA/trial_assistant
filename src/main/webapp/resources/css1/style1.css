@@ -9,6 +9,24 @@
 .prewrap{white-space:pre-wrap;}
 .preline{white-space:pre-line;}
 
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+    .modal:before {
+            display: inline-block;
+            vertical-align: middle;
+            content: " ";
+            height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
 html{
     font-size: 10px;
 }
@@ -36,22 +54,40 @@ a{
     font-size: 3rem;
 }
 
- .board_title_p{  
-    margin-top: 5px;
-    font-size: 1.4rem;
+
+.board_wrap .container{
+    padding-top: 30px;
 }
-
-
-    
 
 
 .bt_wrap{
     margin-top: 30px;
-    text-align: center;
+    float: right;
     font-size: 0;
+   
     
+
 }
 
+.bt_wrap .buut{
+   margin: 30px;
+   float: right;
+}
+
+.bt_wrap .butt1{
+    margin: 5px;
+}
+
+.bt_wrap .butt2{
+    margin: 5px;
+}
+
+.bt_wrap .butt3{
+    margin: 10px;
+}
+    
+
+/*  버튼 사이간격 꾸미기 / 벌리기  
 .bt_wrap a{
     display: inline-block;
     min-width: 80px;
@@ -61,7 +97,7 @@ a{
     font-size: 1.4rem;
     margin: 10px;
    
-}
+} 
 
 .bt_wrap a:first-child{
     margin-left: 0;
@@ -71,7 +107,7 @@ a{
     background : #000;
     color: #fff;
     padding: 10px;
-}
+} */
 
 .board_list_wrap{
     margin-top: 100px;
@@ -140,6 +176,10 @@ a{
 .board_list .count {
     width: 10%
     
+}
+
+.board_list_wrap .board_list .call .next{
+    width: 10%;
 }
 
 .board_page{
@@ -321,9 +361,54 @@ a{
     border: 0;
     resize: vertical;
 }
+.board_prev{
+    
+    border-top: 2px solid #000;
+}
+.board_prev .next{
+  width: 10%;
+}
+
+.prev_head{
+    width: 1200px;
+    margin: 200px auto;
+    padding-left: 200px;
+}
+    
+
+
+.prev_head .prev_row{
+    width: 100%;
+    padding: 15px 20px;
+    border-top: 2px solid #000;
+    font-weight: bold;
+    
+    
+    
+}
+.prev_head .prev_row i{
+    padding: 0 20px;
+}
+
+.prev_head .prev_row a{
+   
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    
+    
+} 
+
+.prev_foot .prev_row {
+    border-bottom: 2px solid #000;
+    font-weight: bold;
+}
+
+
+
 aside{
     float: left;
     width: 20%;
-    height: 1300px;
+    height: 1500px;
     background: green;
 }

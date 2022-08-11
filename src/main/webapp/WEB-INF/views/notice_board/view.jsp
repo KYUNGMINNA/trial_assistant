@@ -18,14 +18,21 @@
 	 --%>
     <link href="${pageContext.request.contextPath }/resources/css/bootstrap.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath }/resources/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   
     <!--개인 디자인 추가-->
-    
+    <link href="${pageContext.request.contextPath }/resources/css/style.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath }/resources/css1/style1.css" rel="stylesheet">
     <script src="${pageContext.request.contextPath }/resources/js/bootstrap.js"></script>
+    
+    <script
+src="https://code.jquery.com/jquery-3.6.0.min.js" 
+integrity ="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin = "anonymous"></script>
+
+    
 </head>
 <body>
-	<section>
+	 <section>
 
 
 
@@ -34,7 +41,7 @@
 
 
 
-   <aside>
+    <aside>
 
 
         사이드바 
@@ -90,12 +97,92 @@
             </div>
             <div class="bt_wrap">
 
-                <a href="#" class="btn btn-primary">목록</a>
-                <a href="#" class="btn btn-primary">수정</a>
-            </div>
-         </div>   
+                <button type="button" class="butt1 btn btn-info btn-md"
+                > 목록</button>
+               
+                <button type="button" class="butt2 btn btn-info btn-md"
+                data-toggle="modal" href = "#myModal3"> 삭제</button>
+               
+                <button type="button" class="butt3 btn btn-info btn-md"
+                > 수정</button>
+                </div>
+                </div>
+        
+
+               
+                  
+                  <div class="modal" id="myModal3">
+                    <div class="modal-dialog modal-sm">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                           
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          </div><div class="container"></div>
+                          <div class="modal-body">
+                            <p>
+                               정말로 삭제하시겠습니까 ?
+                            </p>
+                            
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" data-dismiss="modal" class="btn btn-default">닫기</a>
+                            <a href="#" data-dismiss="modal" class="btn btn-default">확인</a>
+                             <%-- <a data-toggle="modal" href="#myModal4" class="btn btn-primary">확인</a> --%>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  
+                <%--   <div class="modal" id="myModal4" data-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                          </div><div class="container"></div>
+                          <div class="modal-body">
+                              <p> 삭제가 완료되었습니다.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <a href="#" data-dismiss="modal" class="btn btn-primary">저장</a>
+                            
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              주석 처리된 부분 추후에 수정 넘어가지 않음      --%>
+                        </div>
+                      </div>
+                  </div>
+
+
+
+
+      <!-- 이전글 다음글 -->
+     <div class="prev_head">
+        <div class="prev_row">
+            <div class="next_1">
+            <div class="next"><a href="#"><i class="fa-solid fa-angle-up"></i> 다음 글 : 글 제목이 들어갑니다.   </a>
+
+               
+        </div>
     </div>
+     </div>
+     <div class="prev_foot">
+        <div class="prev_row">
+            <div class="foot_1">
+                
+            <div class="before"><a href="#"><i class="fa-solid fa-angle-down"></i>이전 글 : 글 제목이 들어갑니다.  </a>
 
+            </div>
+        </div>
+    </div>
+     </div>
+      
+     
+
+</div>
 </body>
-
 </html>
+ <script src="${pageContext.request.contextPath }/resources/js1/Popup.js"></script>
