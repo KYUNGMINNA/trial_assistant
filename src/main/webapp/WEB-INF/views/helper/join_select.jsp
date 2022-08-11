@@ -34,7 +34,7 @@
 <body>
 	<%@ include file="../include/header.jsp"%>
 
-	<section class="container-fluid join-wrap">
+	<div class="container-fluid join-wrap">
 		<h1 class="join-title">회 원 가 입</h1>
 		<span>본인이 해당하는 회원가입 유형을 선택해 주세요.</span> <br>
 		<br>
@@ -73,10 +73,8 @@
     </script>
     
     
-    
-    <%@ include file="../include/footer.jsp"%>
-    
-    </section>
-
+    </div>
+  
+	<%@ include file="../include/footer.jsp"%>
 </body>
 </html>
