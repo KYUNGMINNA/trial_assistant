@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@
 	rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!--°³ÀÎ µðÀÚÀÎ Ãß°¡-->
+<!--ê°œì¸ ë””ìžì¸ ì¶”ê°€-->
 <link
 	href="${pageContext.request.contextPath }/resources/css/choiStyle.css"
 	rel="stylesheet">
@@ -34,14 +34,14 @@
 <body>
 	<%@ include file="../include/header.jsp"%>
 
-	<!--¾ÆÀÌµð ºñ¹Ð¹øÈ£ µ¥ÀÌÅÍ °ËÁõ ÃßÈÄ Ãß°¡ ¿¹Á¤-->
-	<section>
+	<!--ì•„ì´ë”” ë¹„ë°€ë²ˆí˜¸ ë°ì´í„° ê²€ì¦ ì¶”í›„ ì¶”ê°€ ì˜ˆì •-->
+	
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-4"></div>
 				<div class="col-md-4 user-join-form">
 					<div class="user-title">
-						<h1>±â°ü È¸¿ø°¡ÀÔ</h1>
+						<h1>ê¸°ê´€ íšŒì›ê°€ìž…</h1>
 					</div>
 
 					<br>
@@ -49,70 +49,70 @@
 					<form action="#" method="post" id="#">
 
 						<div class="form-group">
-							<label for="id">¾ÆÀÌµð</label>
+							<label for="id">ì•„ì´ë””</label>
 							<div class="input-group">
 								<input type="text" name="#" class="form-control" id="#"
-									placeholder="¾ÆÀÌµð¸¦ ÀÔ·ÂÇÏ¼¼¿ä">
+									placeholder="ì•„ì´ë””ë¥¼ ìž…ë ¥í•˜ì„¸ìš”">
 								<div class="input-group-addon">
-									<button type="button" class="btn btn-primary" id="id-check-btn">Áßº¹
-										È®ÀÎ</button>
+									<button type="button" class="btn btn-primary" id="id-check-btn">ì¤‘ë³µ
+										í™•ì¸</button>
 								</div>
 							</div>
-							<!--<span id="#">*ÇÊ¼ö »çÇ×ÀÔ´Ï´Ù.</span>
-                            ÀÚ¹Ù½ºÅ©¸³Æ®¿¡¼­ Ãß°¡ ¿¹Á¤-->
+							<!--<span id="#">*í•„ìˆ˜ ì‚¬í•­ìž…ë‹ˆë‹¤.</span>
+                            ìžë°”ìŠ¤í¬ë¦½íŠ¸ì—ì„œ ì¶”ê°€ ì˜ˆì •-->
 						</div>
 
 						<div class="form-group">
-							<label for="password">ºñ¹Ð¹øÈ£</label> <input type="password"
-								name="#" class="form-control" id="#" placeholder="ºñ¹Ð¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä">
+							<label for="password">ë¹„ë°€ë²ˆí˜¸</label> <input type="password"
+								name="#" class="form-control" id="#" placeholder="ë¹„ë°€ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”">
 							<!--<span id="#"></span>
-                            ÀÚ¹Ù½ºÅ©¸³Æ®¿¡¼­ Ãß°¡ ¿¹Á¤-->
+                            ìžë°”ìŠ¤í¬ë¦½íŠ¸ì—ì„œ ì¶”ê°€ ì˜ˆì •-->
 						</div>
 
 						<div class="form-group">
-							<label for="password-confrim">ºñ¹Ð¹øÈ£ È®ÀÎ</label> <input
+							<label for="password-confrim">ë¹„ë°€ë²ˆí˜¸ í™•ì¸</label> <input
 								type="password" class="form-control" id="#"
-								placeholder="ºñ¹Ð¹øÈ£¸¦ È®ÀÎÇØÁÖ¼¼¿ä.">
+								placeholder="ë¹„ë°€ë²ˆí˜¸ë¥¼ í™•ì¸í•´ì£¼ì„¸ìš”.">
 							<!--<span id="#"></span>
-                            ÀÚ¹Ù½ºÅ©¸³Æ®¿¡¼­ Ãß°¡ ¿¹Á¤-->
+                            ìžë°”ìŠ¤í¬ë¦½íŠ¸ì—ì„œ ì¶”ê°€ ì˜ˆì •-->
 						</div>
 
 						<div class="form-group email-form">
-							<label for="email">ÀÌ¸ÞÀÏ</label>
+							<label for="email">ì´ë©”ì¼</label>
 							<div class="input-group">
 								<input type="email" name="#" class="form-control" id="#"
 									placeholder="abcd@naver.com">
 								<div class="input-group-addon">
 									<button type="button" id="email-check-btn"
-										class="btn btn-primary">ÀÌ¸ÞÀÏ ÀÎÁõ</button>
+										class="btn btn-primary">ì´ë©”ì¼ ì¸ì¦</button>
 								</div>
 							</div>
 
 							<div class="mail-check-box">
 								<input type="text" class="form-control mail-check-input"
-									placeholder="ÀÎÁõ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä." maxlength="#" disabled="disabled">
+									placeholder="ì¸ì¦ë²ˆí˜¸ë¥¼ ìž…ë ¥í•˜ì„¸ìš”." maxlength="#" disabled="disabled">
 								<span id="mail-check-warn"></span>
 							</div>
 						</div>
 
 						<div class="form-group checkbox">
 							<div>
-								<strong>±â°ü ¾à°ü µ¿ÀÇ</strong>
+								<strong>ê¸°ê´€ ì•½ê´€ ë™ì˜</strong>
 							</div>
 							<label> <script>
                                      
                                 </script> <input type="checkbox" id="ok1"><a
-								href="#join-modal1" data-toggle="modal">¾à°ü1</a> <br> <input
+								href="#join-modal1" data-toggle="modal">ì•½ê´€1</a> <br> <input
 								type="checkbox" id="ok2"><a href="#join-modal2"
-								data-toggle="modal">¾à°ü2</a> <br> <input type="checkbox"
-								id="ok3"><a href="#join-modal3" data-toggle="modal">¾à°ü3</a>
+								data-toggle="modal">ì•½ê´€2</a> <br> <input type="checkbox"
+								id="ok3"><a href="#join-modal3" data-toggle="modal">ì•½ê´€3</a>
 								<br>
 							</label>
 						</div>
 
 						<div class="form-group">
 							<button type="button" id="join-btn"
-								class="btn btn-lg btn-info btn-block">È¸¿ø°¡ÀÔ</button>
+								class="btn btn-lg btn-info btn-block">íšŒì›ê°€ìž…</button>
 						</div>
 
 					</form>
@@ -120,9 +120,9 @@
 				<div class="col-md-4"></div>
 			</div>
 		</div>
-	</section>
+	
 
-	<!-- ¸ð´Þ ¿µ¿ª -->
+	<!-- ëª¨ë‹¬ ì˜ì—­ -->
 	<div id="join-modal1" class="modal fade" tabindex="-1" role="dialog"
 		aria-labelledby="myModalLabel">
 		<div class="modal-dialog " role="document">
@@ -130,10 +130,10 @@
 				<div class="modal-header" style="text-align: center;">
 					<button type="button" class="close" data-dismiss="modal"
 						aria-label="Close">
-						<span aria-hidden="true">¡¿</span>
+						<span aria-hidden="true">Ã—</span>
 					</button>
 					<h4 class="modal-title" id="myModalLabel">
-						<strong>¾à°ü1</strong>
+						<strong>ì•½ê´€1</strong>
 					</h4>
 				</div>
 				<div class="modal-body">
@@ -151,26 +151,29 @@
 						placerat dolor hendrerit purus congue dictum eget et lorem.</p>
 				</div>
 				<div class="modal-footer">
-					<button type="button" class="btn btn-primary" id="okBtn">µ¿ÀÇ</button>
-					<button type="button" class="btn btn-default" id="closeModalBtn">Ãë¼Ò</button>
+					<button type="button" class="btn btn-primary" id="okBtn">ë™ì˜</button>
+					<button type="button" class="btn btn-default" id="closeModalBtn">ì·¨ì†Œ</button>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- ¾à°üµ¿ÀÇ ¸ð´Þ Ã¼Å©¹Ú½º ±â´É Ãß°¡ ÇØ¾ß ÇÔ -->
+	<!-- ì•½ê´€ë™ì˜ ëª¨ë‹¬ ì²´í¬ë°•ìŠ¤ ê¸°ëŠ¥ ì¶”ê°€ í•´ì•¼ í•¨ -->
 	<script>
-        // ¸ð´Þ µ¿ÀÇ ¹öÆ° ÀÌº¥Æ®  
+        // ëª¨ë‹¬ ë™ì˜ ë²„íŠ¼ ì´ë²¤íŠ¸  
         $('#okBtn').on('click', function () {
             $('#ok1').prop('checked', true);
             $('#ok1').attr('checked', true);
             $('#join-modal1').modal('hide');
         });
-        // ¸ð´Þ ¾ÈÀÇ Ãë¼Ò ¹öÆ°¿¡ ÀÌº¥Æ®
+        // ëª¨ë‹¬ ì•ˆì˜ ì·¨ì†Œ ë²„íŠ¼ì— ì´ë²¤íŠ¸
         $('#closeModalBtn').on('click', function () {
             $('#join-modal1').modal('hide');
         });
     </script>
+    
+    <%@ include file="../include/footer.jsp"%>
+    
 
 </body>
 </html>

@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
+Built-By: choip
+Build-Jdk: 1.8.0_333
+=======
 Built-By: vkdlf
 Build-Jdk: 1.8.0_321
+>>>>>>> 900cc0cc1db876ed63c7ec6d7ef91eda32a99620
 Created-By: Maven Integration for Eclipse
 

@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,14 +36,14 @@
 <body>
 	<%@ include file="../include/header.jsp"%>
 
-	<section class="clearfix">
-
-		<aside>메뉴 예시</aside>
+	
 
 		<div class="container-fluid">
 			<div class="row">
 				<!--lg에서 9그리드, xs에서 전체그리드-->
-				<div class="col-lg-9 col-xs-12 board-table helper-wrap">
+				<div class="col-md-2"></div>	
+				
+				<div class="col-lg-9 col-md-8 col-xs-12 board-table helper-wrap">
 					<div class="titlebox">
 						<h3>공고 진행중인 조력자 유형</h3>
 					</div>
@@ -192,50 +193,15 @@
 					</div>
 
 				</div>
+				
+				<div class="col-md-2"></div>	
+				
 			</div>
 		</div>
-	</section>
-	<button type="button" class="btn btn-info"
-		onclick="location.href='<c:url value="/freeboard/freeRegist" />'">글쓰기</button>
-	</div>
-	-->
-
-	<!-- 페이지 관련 버튼(이전, 다음, 페이지번호)을 클릭 시 같이 숨겨서 보내줄 공통 값 
-                        <input type="hidden" name="pageNum" value="${pc.paging.pageNum}">
-                        <input type="hidden" name="cpp" value="${pc.paging.cpp}">
-                        <input type="hidden" name="condition" value="${pc.paging.condition}">
-                        <input type="hidden" name="keyword" value="${pc.paging.keyword}">
-                        
-                    </form>
-                        -->
-
-	<!------------------------------------------------------- 페이징 끝 ------------------------------------------------------->
-
-	<div class="category-select">
-		<br>
-		<div class="titlebox">
-			<h3>조력자 유형 선택</h3>
-		</div>
-		<hr>
-		<form action="#">
-			<span> 유형 선택1 </span> <select class="" name="#">
-				<option value="#">중분류1</option>
-				<option value="#">중분류2</option>
-				<option value="#">중분류3</option>
-				<option value="#">중분류4</option>
-			</select> &nbsp;&nbsp;&nbsp; <span> 유형 선택2 </span> <select class="" name="#">
-				<option value="#">소분류1</option>
-				<option value="#">소분류2</option>
-				<option value="#">소분류3</option>
-				<option value="#">소분류4</option>
-			</select>
-		</form>
-	</div>
-
-	</div>
-	</div>
-	</div>
-	</section>
+		<br><br><br>
+	
+	<%@ include file="../include/footer.jsp"%>
+	
 
 </body>
 
