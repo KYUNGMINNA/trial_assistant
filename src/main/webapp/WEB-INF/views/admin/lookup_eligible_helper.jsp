@@ -3,12 +3,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 접수 내역 상세 조회</title>
+    <title>나의 접수 내역 조회</title>
 
     <!-- 부트스트랩 3.1.1 가져오기 -->
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/resources/css/bootstrap.css">
@@ -26,15 +25,18 @@
             text-align: center;
             vertical-align: middle;
         }
+
+        .table>tbody>tr>th {
+            background-color: lightgrey;
+        }
     </style>
 </head>
-
 <body>
 
 	<%@ include file="/WEB-INF/views/include/header.jsp" %>
 
     <div class="container">
-        <h4>나의 접수 내역 상세 조회</h4>
+        <h4>적격 상태 신청자 상세 조회</h4>
         <table class="table table-bordered">
             <tbody>
                 <tr>
@@ -63,7 +65,7 @@
                 </tr>
                 <tr>
                     <th>상태</th>
-                    <td>승인</td>
+                    <td>적격</td>
                     <th>활동 가능 지역</th>
                     <td>서울, 인천, 경기</td>
                 </tr>
@@ -81,8 +83,8 @@
                         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">평정기준표
                             조회</button>
                     </td>
-                    <th>신청자 상태</th>
-                    <td>적격</td>
+                    <th></th>
+                    <td></td>
                 </tr>
             </tbody>
         </table>
@@ -230,18 +232,27 @@
                         <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
                     </div>
                 </div>
-
             </div>
         </div>
-
-        <h4>평정기준표 코멘트</h4>
-        <textarea class="form-control col-sm-5" rows-5>
-
-        </textarea>
+        <div class="text-center">
+            <button type="button" class="btn btn-success" style="margin-bottom: 20px;">승인</button>
+            <button type="button" class="btn btn-default" style="margin-bottom: 20px">목록</button>
+        </div> 
+       <table class="table">
+            <tr>
+                <td>이전 조력자</td>
+                <td style="text-align: left;">이전 조력자가 없습니다</td>
+            </tr>
+            <tr>
+                <td>다음 조력자</td>
+                <td style="text-align: left;">
+                    <a href="#">김무개 : 제3차 [일반]감정인 모집 공고</a>
+                </td>
+            </tr>
+       </table>
     </div>
     
     <%@ include file="/WEB-INF/views/include/footer.jsp" %>
-    
-</body>
 
+</body>
 </html>
