@@ -32,6 +32,7 @@ crossorigin = "anonymous"></script>
 
 </head>
 <body>
+<%@ include file="/WEB-INF/views/include/header.jsp" %>
 	 <section>
 
 
@@ -183,6 +184,8 @@ crossorigin = "anonymous"></script>
 
 
 </div>
+
+<%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </body>
 </html>
  <script src="${pageContext.request.contextPath }/resources/js1/Popup.js"></script>

@@ -29,7 +29,7 @@ crossorigin = "anonymous"></script>
 </head>
 <body>
 
-
+<%@ include file="/WEB-INF/views/include/header.jsp" %>
 	<section>
 
 
@@ -192,6 +192,8 @@ crossorigin = "anonymous"></script>
                   </div>
               </div>
  주석 처리된 부분 추후에 수정 넘어가지 않음  --%>
+ 
+ <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </body>
 </html>
 
