@@ -21,6 +21,7 @@
 </style>
 </head>
 <body>
+<%@ include file="/WEB-INF/views/include/header.jsp" %>
      <div class="container">
         <form action="" method="post" id="modifyMyInfo">
             <h4>안전한 이용을 위해, 비밀번호를 확인해 주세요.</h4>
@@ -38,5 +39,6 @@
             <input type="submit" value="확인" class="btn btn-primary center-block btn-block" id="">
         </form>
      </div> 
+      <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </body>
 </html>

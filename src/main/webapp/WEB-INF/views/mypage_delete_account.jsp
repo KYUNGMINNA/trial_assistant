@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 </head>
 <body>
+<%@ include file="/WEB-INF/views/include/header.jsp" %>
     <div class="container">
         <form action="" method="post" id="modifyMyInfo">
             <h3>회원가입 탈퇴</h3>
@@ -54,6 +55,7 @@
 </p>    
 </form>
     </div>
+     <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </body>
 </html>
 

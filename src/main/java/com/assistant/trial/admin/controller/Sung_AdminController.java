@@ -10,7 +10,7 @@ public class Sung_AdminController {
 
 	@GetMapping("/lookup_eligible_helper")
 	public String lookUpEligibleHelper() {
-		return "/admin/lookup_eligible_helper";
+		return "admin/lookup_eligible_helper";
 	}
 	
 	@GetMapping("/manage_helper_apply")
@@ -20,6 +20,6 @@ public class Sung_AdminController {
 	
 	@GetMapping("/manage_helper_assign")
 	public String manageHelperAssign() {
-		return "/admin/manage_helper_assign";
+		return "/admin/manage_helper_assign_list";
 	}
 }

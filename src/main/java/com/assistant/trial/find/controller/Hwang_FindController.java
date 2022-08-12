@@ -32,4 +32,16 @@ public class Hwang_FindController {
 	public String resetMyPassword() {
 		return "/find/reset_my_password";
 	}
+	
+	
+	@GetMapping("/mypage_delete")
+	public String mypage_delete() {
+		return "mypage_delete_account";
+	}
+	
+	@GetMapping("/mypage_password")
+	public String mypage_password() {
+		return "mypage_password_auth";
+	}
+	
 }

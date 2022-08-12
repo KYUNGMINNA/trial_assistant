@@ -30,6 +30,7 @@
 </head>
 
 <body>
+<%@ include file="/WEB-INF/views/include/header.jsp" %>
     <div class="container">
         <h1>비밀번호 찾기</h1>
         <form action="" method="post" id="">
@@ -77,5 +78,6 @@
     <button type="button" class="btn btn-primary btn-lg">다음 페이지</button>
 </form>
 </div>
+ <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </body>
 </html>

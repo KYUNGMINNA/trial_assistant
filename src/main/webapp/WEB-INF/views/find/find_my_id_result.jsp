@@ -30,6 +30,7 @@
 </head>
 
 <body>
+<%@ include file="/WEB-INF/views/include/header.jsp" %>
   <div class="container">
 
     <table class="table">
@@ -58,6 +59,7 @@
 
     </table>
   </div>
+   <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </body>
 
 </html>

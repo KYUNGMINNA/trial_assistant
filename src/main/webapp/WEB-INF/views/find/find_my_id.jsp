@@ -31,6 +31,7 @@
 </head>
 
 <body>
+<%@ include file="/WEB-INF/views/include/header.jsp" %>
     <div class="container">
         <h1>아이디 찾기</h1>
         <table class="table table-bordered">
@@ -71,7 +72,7 @@
         </table>
         <button type="button" class="btn btn-primary btn-lg">다음 페이지</button>
     </div>
-
+ <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </body>
 
 </html>

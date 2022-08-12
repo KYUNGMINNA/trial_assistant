@@ -25,6 +25,7 @@
 </style>
 
 <body>
+<%@ include file="/WEB-INF/views/include/header.jsp" %>
     <div class="container">
         <form action="#">
             <h1>로그인</h1>
@@ -38,6 +39,7 @@
         </form>
         
     </div>
+     <%@ include file="/WEB-INF/views/include/footer.jsp" %>
 </body>
 
 </html>
