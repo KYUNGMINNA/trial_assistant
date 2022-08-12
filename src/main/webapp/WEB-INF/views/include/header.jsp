@@ -26,7 +26,7 @@
 <body>
 	 <!------ Header ---------->
 
-      <header>
+       <header>
         
       <div class="wrap" style="min-width: 1400px;">
         <div id="top">
@@ -53,8 +53,8 @@
             </div>
         </div>
         </div>
-    	
-         <div class="navbar-affixed-top" data-spy="affix" data-offset-top="100">
+    
+         <div class="navbar-top" data-spy="nav" data-offset-top="100">
              <nav class="navbar navbar-default">
                   <div class="container-fluid">
                     <div class="navbar-header">
@@ -63,7 +63,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>                        
                          </button>
-                      <img src="resources/img/image2.png" width="300px" alt="Company Logo">
+                      <img src="/bootstrap test/bootstrap3/image/image2.png" width="300px" alt="Company Logo">
                     </div>
                       <div class="collapse navbar-collapse" id="myNavbar" algin="center">
                         <ul class="nav navbar-nav">
