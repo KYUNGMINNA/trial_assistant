@@ -1,6 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 
 <!DOCTYPE html>
 <html>
@@ -8,71 +9,72 @@
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 
-<script src="https://kit.fontawesome.com/89b715172c.js"
-	crossorigin="anonymous">
-    </script>
-
-<%-- 
-		${pageContext.request.contextPath} == <c:url value='' />
-	 --%>
-<link
-	href="${pageContext.request.contextPath }/resources/css/bootstrap.css"
-	rel="stylesheet">
-<link
-	href="${pageContext.request.contextPath }/resources/css/bootstrap.min.css"
-	rel="stylesheet">
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!--°³ÀÎ µðÀÚÀÎ Ãß°¡-->
-<link
-	href="${pageContext.request.contextPath }/resources/css/choiStyle.css"
-	rel="stylesheet">
-<script
-	src="${pageContext.request.contextPath }/resources/js/bootstrap.js"></script>
+	<script src="https://kit.fontawesome.com/89b715172c.js"
+		crossorigin="anonymous">
+	</script>
+	
+	<%-- 
+			${pageContext.request.contextPath} == <c:url value='' />
+		 --%>
+	<link
+		href="${pageContext.request.contextPath }/resources/css/bootstrap.css"
+		rel="stylesheet">
+	<link
+		href="${pageContext.request.contextPath }/resources/css/bootstrap.min.css"
+		rel="stylesheet">
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!--ê°œì¸ ë””ìžì¸ ì¶”ê°€-->
+	<link
+		href="${pageContext.request.contextPath }/resources/css/choiStyle.css"
+		rel="stylesheet">
+	<script
+		src="${pageContext.request.contextPath }/resources/js/bootstrap.js"></script>
+	
 
 </head>
 <body>
 	<%@ include file="../include/header.jsp"%>
+
 	
 
-	<!-- ¸ð´ÞÀ» ¿­±â À§ÇÑ ¹öÆ° (Á¶·ÂÀÚ ½ÅÃ» ¿Ï·á ¹öÆ°À¸·Î Ã³¸® ¿¹Á¤) -->
-    <button type="button" class="btn btn-primary btn-lg" id="openModalBtn">Á¶·ÂÀÚ ½ÅÃ» ¹öÆ°</button>
-
-    <!-- ¸ð´Þ ¿µ¿ª -->
-    <div id="modalBox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog " role="document">
-            <div class="modal-content">
-                <div class="modal-header"> <button type="button" class="close" data-dismiss="modal"
-                        aria-label="Close"><span aria-hidden="true">¡¿</span></button>
-                    <h4 class="modal-title" id="myModalLabel">
-                        <strong>(ÀÌ¸§)</strong>´Ô ½ÅÃ»ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.
-                    </h4>
-                </div>
-                <div class="modal-body">
-                    <!--<fmt:formatDate value="#" pattern="yyyy-MM-dd HH:mm" />-->
-                    2022-08-08 00½Ã 00ºÐ¿¡ ½ÅÃ»ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù.
-                </div>
-                <div class="modal-footer"> 
-                    <button type="button" class="btn btn-primary" id="#">¸ÞÀÎ È­¸é</button> 
-                    <button type="button" class="btn btn-default" id="#">¸¶ÀÌÆäÀÌÁö</button> 
-                </div>
+        <div class="container-fluid helper-suc-wrap">
+            <div class="helper-suc-title">
+                <h1>
+                    <strong>(ì´ë¦„)</strong>ë‹˜ ì‹ ì²­ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.
+                </h1>
             </div>
-        </div>
-    </div>
+            <div class="helper-suc-subtitle">
+                <span>
+                    <!--<fmt:formatDate value="#" pattern="yyyy-MM-dd HH:mm" />-->
+                    2022-08-08 00ì‹œ 00ë¶„ì— ì‹ ì²­ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.
+                </span>
+            </div>
+            <div class="btn-wrap">
+                <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                    <button type="button" class="btn btn-default btn-primary">ë©”ì¸&nbsp; í™”ë©´</button>
+                    <button type="button" class="btn btn-default btn-info">ë§ˆì´íŽ˜ì´ì§€</button>
+                  </div>
+            </div>
 
-    <script>
-        // ¸ð´Þ ¹öÆ°¿¡ ÀÌº¥Æ®¸¦ °Ç´Ù.  
-        $('#openModalBtn').on('click', function () {
-            $('#modalBox').modal('show');
-        });
-        // ¸ð´Þ ¾ÈÀÇ Ãë¼Ò ¹öÆ°¿¡ ÀÌº¥Æ®¸¦ °Ç´Ù.  
-        $('#closeModalBtn').on('click', function () {
-            $('#modalBox').modal('hide');
-        });
-    </script>
+        </div>
+        
+    
+    
+    <%@ include file="../include/footer.jsp"%>
+    
+
 
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 
 

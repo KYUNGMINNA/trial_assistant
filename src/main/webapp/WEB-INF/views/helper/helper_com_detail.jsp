@@ -1,12 +1,16 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-   
+
+
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>helper_com_detail</title>
 
 <script src="https://kit.fontawesome.com/89b715172c.js"
 	crossorigin="anonymous">
@@ -23,7 +27,7 @@
 	rel="stylesheet">
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<!--∞≥¿Œ µ¿⁄¿Œ √ﬂ∞°-->
+<!--Í∞úÏù∏ ÎîîÏûêÏù∏ Ï∂îÍ∞Ä-->
 <link
 	href="${pageContext.request.contextPath }/resources/css/choiStyle.css"
 	rel="stylesheet">
@@ -31,141 +35,108 @@
 	src="${pageContext.request.contextPath }/resources/js/bootstrap.js"></script>
 
 </head>
+
 <body>
+
 	<%@ include file="../include/header.jsp"%>
-	
 
-	<section class="clearfix">
 
-        <aside>
-            ∏ﬁ¥∫ øπΩ√
-        </aside>
+	<!------------------------------- Î≥∏Î¨∏ ÎÇ¥Ïö© ------------------->
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-9 col-xs-9 board-table helper-detail-wrap">
-                    <div class="titlebox">
-                        <h3>¡∂∑¬¿⁄ Ω≈√ª ±‚∞¸ ªÛºº ¡∂»∏</h3>
-                    </div>
-                    <hr>
 
-                    <!--≈◊¿Ã∫Ì form≈¬±◊-->
-                    <form action="#" method="post">
-                        <div class="detail-wrap clearfix">
-                            <table class="table container-fluid table-condensed helper-detail-table">
-                                <!-- π›∫ππÆ « ø‰ -->
-                                <tr>
-                                    <td class="info">
-                                        	±‚∞¸∏Ì
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="text" name="#" class="#" value="±‚∞¸1" disabled>
-                                    </td>
-                                    <td class="info">
-                                        	ªÁæ˜¿⁄ π¯»£
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="text" name="#" class="#" value="0000-0000"
-                                            disabled>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="info">
-                                        	¡ˆø¯ ∞¯∞Ì ¿Ã∑¬
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="text" name="#" class="#"
-                                            value="¡¶ 2¬˜ [∞Ê∏≈]∞®¡§¿Œ ∏¡˝ ∞¯∞Ì" disabled>
-                                    </td>
-                                    <td class="info">
-                                        	±‚∞¸ ¿¸»≠π¯»£
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="text" name="#" class="#" value="02-1234-1234"
-                                            disabled>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="info">
-                                        	¡∂∑¬¿⁄ ¿Ø«¸
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="text" name="#" class="#" value="∞Ê∏≈" disabled>
-                                    </td>
-                                    <td class="info">
-                                        	¡˜æ˜
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="text" name="#" class="#" value="∫ŒµøªÍ ƒ¡º≥≈œ∆Æ"
-                                            disabled>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="info">
-                                        	±‚∞¸ ∆—Ω∫ π¯»£
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="text" name="#" class="#" value="0000-0000"
-                                            disabled>
-                                    </td>
-                                    <td class="info">
-                                        	»∞µø ∞°¥… ¡ˆø™
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="text" name="#" class="#" value="º≠øÔ" disabled>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="info">
-                                        	±‚∫ª¡÷º“
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="text" name="#" class="#" value="º≠øÔΩ√ ∞≠≥≤±∏"
-                                            disabled>
-                                    </td>
-                                    <td class="info">
-                                        	¡ˆ¡§ π˝ø¯
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="text" name="#" class="#" value="º≠øÔº≠∫Œ¡ˆπÊπ˝ø¯"
-                                            disabled>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="info">
-                                        	ªÛºº¡÷º“
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="text" name="#" class="#" value="≈◊«Ï∂ı∑Œ 13±Ê 503»£"
-                                            disabled>
-                                    </td>
-                                    <td class="info">
-                                        	±‚∞¸ ¡ı∫˘ º≠∑˘
-                                    </td>
-                                    <td>
-                                        <input class="form-control" type="file" name="#" id="formFile" disabled>
-                                    </td>
-                                </tr>
-                            </table>
-                            <div class="btn-group detail-btn-wrap" role="group" aria-label="...">
-                                <button type="button" class="btn btn-secondary">ªË¡¶</button>
-                                <button type="button" class="btn btn-primary">ºˆ¡§</button>
-                                <button type="button" class="btn btn-default">∏Ò∑œ</button>
-                            </div>
-                            <!--display none √≥∏Æ «ÿ≥ı¿Ω. ºˆ¡§ πˆ∆∞ ¥≠∑∂¿ª ∂ß ºˆ¡§ ∆‰¿Ã¡ˆø°º≠ ª˝±Ê πˆ∆∞-->
-                            <div class="btn-group detail-btn-wrap2" role="group" aria-label="...">
-                                <button type="button" class="btn btn-secondary">ªË¡¶</button>
-                                <button type="button" class="btn btn-primary">µÓ∑œ</button>
-                            </div>
-                        </div>
 
-                    </form>
-                    <br>
-                    <hr>
-                </div>
-            </div>
-        </div>
-    </section>
 
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2"></div>	
+				<div class="col-lg-9 col-md-8 col-xs-9 board-table helper-detail-wrap">
+					<div class="titlebox">
+						<h3>Ï°∞Î†•Ïûê Ïã†Ï≤≠ Í∏∞Í¥Ä ÏÉÅÏÑ∏ Ï°∞Ìöå</h3>
+					</div>
+					<hr>
+
+					<!--ÌÖåÏù¥Î∏î formÌÉúÍ∑∏-->
+					<form action="#" method="post">
+						<div class="detail-wrap clearfix">
+							<table
+								class="table container-fluid table-condensed helper-detail-table">
+								<!-- Î∞òÎ≥µÎ¨∏ ÌïÑÏöî -->
+								<tr>
+									<td class="info">Í∏∞Í¥ÄÎ™Ö</td>
+									<td><input class="form-control" type="text" name="#"
+										class="#" value="Í∏∞Í¥Ä1" disabled></td>
+									<td class="info">ÏÇ¨ÏóÖÏûê Î≤àÌò∏</td>
+									<td><input class="form-control" type="text" name="#"
+										class="#" value="0000-0000" disabled></td>
+								</tr>
+								<tr>
+									<td class="info">ÏßÄÏõê Í≥µÍ≥† Ïù¥Î†•</td>
+									<td><input class="form-control" type="text" name="#"
+										class="#" value="Ï†ú 2Ï∞® [Í≤ΩÎß§]Í∞êÏ†ïÏù∏ Î™®Ïßë Í≥µÍ≥†" disabled></td>
+									<td class="info">Í∏∞Í¥Ä Ï†ÑÌôîÎ≤àÌò∏</td>
+									<td><input class="form-control" type="text" name="#"
+										class="#" value="02-1234-1234" disabled></td>
+								</tr>
+								<tr>
+									<td class="info">Ï°∞Î†•Ïûê Ïú†Ìòï</td>
+									<td><input class="form-control" type="text" name="#"
+										class="#" value="Í≤ΩÎß§" disabled></td>
+									<td class="info">ÏßÅÏóÖ</td>
+									<td><input class="form-control" type="text" name="#"
+										class="#" value="Î∂ÄÎèôÏÇ∞ Ïª®ÏÑ§ÌÑ¥Ìä∏" disabled></td>
+								</tr>
+								<tr>
+									<td class="info">Í∏∞Í¥Ä Ìå©Ïä§ Î≤àÌò∏</td>
+									<td><input class="form-control" type="text" name="#"
+										class="#" value="0000-0000" disabled></td>
+									<td class="info">ÌôúÎèô Í∞ÄÎä• ÏßÄÏó≠</td>
+									<td><input class="form-control" type="text" name="#"
+										class="#" value="ÏÑúÏö∏" disabled></td>
+								</tr>
+								<tr>
+									<td class="info">Í∏∞Î≥∏Ï£ºÏÜå</td>
+									<td><input class="form-control" type="text" name="#"
+										class="#" value="ÏÑúÏö∏Ïãú Í∞ïÎÇ®Íµ¨" disabled></td>
+									<td class="info">ÏßÄÏ†ï Î≤ïÏõê</td>
+									<td><input class="form-control" type="text" name="#"
+										class="#" value="ÏÑúÏö∏ÏÑúÎ∂ÄÏßÄÎ∞©Î≤ïÏõê" disabled></td>
+								</tr>
+								<tr>
+									<td class="info">ÏÉÅÏÑ∏Ï£ºÏÜå</td>
+									<td><input class="form-control" type="text" name="#"
+										class="#" value="ÌÖåÌó§ÎûÄÎ°ú 13Í∏∏ 503Ìò∏" disabled></td>
+									<td class="info">Í∏∞Í¥Ä Ï¶ùÎπô ÏÑúÎ•ò</td>
+									<td><input class="form-control" type="file" name="#"
+										id="formFile" disabled></td>
+								</tr>
+							</table>
+							<div class="btn-group detail-btn-wrap" role="group"
+								aria-label="...">
+								<button type="button" class="btn btn-secondary">ÏÇ≠Ï†ú</button>
+								<button type="button" class="btn btn-primary">ÏàòÏ†ï</button>
+								<button type="button" class="btn btn-default">Î™©Î°ù</button>
+							</div>
+							<!--display none Ï≤òÎ¶¨ Ìï¥ÎÜìÏùå. ÏàòÏ†ï Î≤ÑÌäº ÎàåÎ†ÄÏùÑ Îïå ÏàòÏ†ï ÌéòÏù¥ÏßÄÏóêÏÑú ÏÉùÍ∏∏ Î≤ÑÌäº-->
+							<div class="btn-group detail-btn-wrap2" role="group"
+								aria-label="...">
+								<button type="button" class="btn btn-secondary">ÏÇ≠Ï†ú</button>
+								<button type="button" class="btn btn-primary">Îì±Î°ù</button>
+							</div>
+						</div>
+
+					</form>
+					<br>
+					<hr>
+				</div>
+				
+				<div class="col-md-2"></div>
+				
+			</div>
+		</div>
+
+		<%@ include file="../include/footer.jsp"%>
+		
 </body>
+
 </html>

@@ -2,6 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,14 +36,14 @@
 <body>
 	<%@ include file="../include/header.jsp" %>
 
-	<section class="clearfix">
-
-		<aside>메뉴 예시</aside>
 
 		<div class="container-fluid">
 			<div class="row">
+			
+				<div class="col-md-2"></div>	
+				
 				<!--lg에서 9그리드, xs에서 전체그리드-->
-				<div class="col-lg-9 col-xs-12 board-table helper-wrap">
+				<div class="col-lg-9 col-md-8 col-xs-12 board-table helper-wrap">
 					<div class="titlebox">
 						<h3>공고 진행중인 조력자 유형</h3>
 					</div>
@@ -171,9 +172,13 @@
 					</div>
 
 				</div>
+				
+				<div class="col-md-2"></div>	
+				
 			</div>
 		</div>
-	</section>
+
+	<%@ include file="../include/footer.jsp" %>
 
 </body>
 
