@@ -52,10 +52,10 @@
 						<h3>감정분야 및 세부 구분 선택</h3>
 						<hr>
 						<span>감정 분야 선택</span> <select name="mid" id="mid">
-							<option selected>중 분류</option>
-							<option >일반감정인</option>
-							<option >통번역인</option>
-							<option >기관추천조력자</option>
+							<option value="sel" selected>중 분류</option>
+							<option value="general">일반감정인</option>
+							<option value="inter">통번역인</option>
+							<option value="agency">기관추천조력자</option>
 						</select> <select name="small" id="small">
 							<option value="sel" selected>소 분류</option>
 						</select>
@@ -76,14 +76,14 @@
                                 <span> 희망 법원 선택</span>
   
                             <select name="law" multiple="multiple" id='law' size="10">
-                                <option >대법원</option>
-                                <option >서울고등법원</option>
-                                <option >서울고등법원(춘천)</option>
-                                <option >대구고등법원</option>
-                                <option >부산고등법원</option>
-                                <option >인천고등법원</option>
-                                <option >광주고등법원</option>
-                                <option >대전고등법원</option>
+                                <option value="a1">대법원</option>
+                                <option value="a2">서울고등법원</option>
+                                <option value="a3">서울고등법원(춘천)</option>
+                                <option value="a4">대구고등법원</option>
+                                <option value="a5">부산고등법원</option>
+                                <option value="a6">인천고등법원</option>
+                                <option value="a7">광주고등법원</option>
+                                <option value="a8">대전고등법원</option>
                             </select>
                             <button type="button" id='btn_add'>법원 선택</button>
                             <button type="button" id='btn_minus'>법원 빼기</button>
@@ -143,11 +143,11 @@
 		/* 감정 분야 중 분류 선택에 따른  소 분류 선택*/
 		$('#mid').change(function(){
 			if($('#mid').val()==='general'){
-	    		$('#small').html("<option >선택</option><option>측량</option><option>문서</option>");
+	    		$('#small').html("<option value='sel'>선택</option><option value='survey'>측량</option><option value='document'>문서</option>");
 	    	}else if($('#mid').val()==='inter'){
-	    		$('#small').html("<option >선택</option><option >통역인</option><option >번역인</option>");
+	    		$('#small').html("<option value='sel'>선택</option><option value='interpreter'>통역인</option><option value='translator'>번역인</option>");
 	    	}else{
-	    		$('#small').html("<option >선택</option><option >의사</option><option >회계사</option>");
+	    		$('#small').html("<option value='sel'>선택</option><option value='doctor'>의사</option><option value='accountant'>회계사</option>");
 	    	}
 		});
 		
@@ -190,8 +190,8 @@
 		 	var code=$('#law2').html().trim();   //누적 코드를 저장하는 공간
 		 	var dd=[];
 		 	for(var n=0;n<selected_value.length;n++){
-				code=code+"<option>"+selected_text[n]+"</option>"
-				dd="<option>"+selected_text[n]+"</option>"
+				code=code+"<option value='"+selected_value[n]+"'>"+selected_text[n]+"</option>"
+				dd="<option value='"+selected_value[n]+"'}>"+selected_text[n]+"</option>"
 				
 				
 				//희망법원을 배열에 저장하는데 ,그저장한 배열안에 중복되어 있는지 확인
