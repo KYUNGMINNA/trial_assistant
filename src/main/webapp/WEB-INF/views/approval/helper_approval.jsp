@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 정보 수정</title>
+    <title>회원 가입 결과</title>
 
     <!-- 부트스트랩 3.1.1 가져오기 -->
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/resources/css/bootstrap.css">
@@ -33,9 +33,9 @@
 	<%@ include file="/WEB-INF/views/include/header.jsp" %>
 
     <div class="container">  
-                       <h1 >승인이 되었습니다.<br>
+                       <h1>승인이 되었습니다.<br>
                     메인페이지로 이동하겠습니다.</h1>
-      <button type="button" class="btn btn-primary btn-lg">다음 페이지</button>
+      <button type="button" class="btn btn-primary btn-lg">메인 페이지로</button>
     </div>
     
     <%@ include file="/WEB-INF/views/include/footer.jsp" %>

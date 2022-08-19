@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+	<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     
@@ -26,7 +26,7 @@
 <body>
 	 <!------ Header ---------->
 
-       <header>
+      <header>
         
       <div class="wrap" style="min-width: 1400px;">
         <div id="top">
@@ -43,8 +43,13 @@
                 
                 <div class="pull-right">
                     <p class="social clearfix" style="margin-top: 7px;">
-                        <a href="#"><i class="fa-solid fa-user-plus">회원가입</i></a>
-                        <a href="#"><i class="fa-solid fa-user"></i>로그인</a>
+                        <a href="<c:url value='/user_join'/>"><i class="fa-solid fa-user-plus">회원가입</i></a>
+                        <c:if test="${login == null}">
+                        	<a href="<c:url value='/find/login'/>"><i class="fa-solid fa-user"></i>로그인</a>
+                        </c:if>
+                        <c:if test="${login != null}">
+                        	<a href="<c:url value='/find/logout'/>"><i class="fa-solid fa-user"></i>로그아웃</a>
+                        </c:if>
                         <a href="#"><i class="fa-solid fa-house-chimney"></i>홈</a>
                         <a href="#"><i class="fa fa-envelope"></i>메시지</a>
                     </p>
@@ -53,8 +58,8 @@
             </div>
         </div>
         </div>
-    
-         <div class="navbar-top" data-spy="nav" data-offset-top="100">
+    	
+         <div class="navbar-affixed-top" data-spy="affix" data-offset-top="100">
              <nav class="navbar navbar-default">
                   <div class="container-fluid">
                     <div class="navbar-header">
@@ -63,7 +68,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>                        
                          </button>
-                      <img src="${pageContext.request.contextPath}/resources/img/image2.png" width="300px" alt="Company Logo">
+                      <img src="resources/img/image2.png" width="300px" alt="Company Logo">
                     </div>
                       <div class="collapse navbar-collapse" id="myNavbar" algin="center">
                         <ul class="nav navbar-nav">
@@ -72,7 +77,11 @@
                            
                           </li>
                           <li><a href="#">고객 센터</a></li>
-                          <li><a href="#">마이페이지</a></li>
+                          <c:if test="${login != null}">
+                          	<li>
+                          		<a href="#">마이페이지</a>
+                          	</li>
+                          </c:if>
                         </ul>
                       </div>
                   </div>
