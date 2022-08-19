@@ -155,7 +155,7 @@
 			
 			$.ajax({
 				type: 'POST', 
-				url: '/myweb/member/checkId', 
+				url: '/trial/member/checkId', 
 				contentType: 'application/json',
 				dataType: 'text', 
 				data: id,
@@ -242,7 +242,7 @@
 			
 			$.ajax({
 				type: 'POST', 
-				url: '/myweb/member/checkEmail', 
+				url: '/trial/member/checkEmail', 
 				contentType: 'application/json',
 				dataType: 'text', 
 				data: email,
@@ -289,7 +289,7 @@
 			if (chk1 && chk2 && chk3 && chk4) {
 				$.ajax({
 					type: 'POST',
-					url: '/myweb/member/signup',
+					url: '/trial/member/signup',
 					contentType: 'application/json',
 					dataType: 'text',
 					data: JSON.stringify(member),

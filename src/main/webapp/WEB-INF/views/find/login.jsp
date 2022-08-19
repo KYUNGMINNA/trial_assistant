@@ -91,7 +91,7 @@
         <c:if test="${login != null}">
         	<h1>${login.memUserId} 로 현재 로그인 중입니다.</h1>
         	<!-- 메인 페이지로 보내는 링크 상대 링크로 변경 (c:url ...) -->
-        	<a href="/myweb/">메인 페이지로</a>
+        	<a href="/trial/">메인 페이지로</a>
         </c:if>
     </div>
 
@@ -111,14 +111,14 @@
 
                 $.ajax({
                     type: 'POST',
-                    url: '/myweb/find/login',
+                    url: '/trial/find/login',
                     contentType: 'application/json',
                     dataType: 'text',
                     data: JSON.stringify(member),
                     success: function (result) {
                         if (result === 'loginSuccess') {
                             console.log('로그인 성공!');
-                            location.href = '/myweb/';
+                            location.href = '/trial/';
                         } else if (result === 'idFail') {
                             alert('존재하지 않는 아이디입니다.');
                         } else if (result === 'pwFail') {

@@ -153,7 +153,7 @@ $(function() {
 		
 		$.ajax({
 				type: 'POST', 
-				url: '/myweb/member/resetPwByIdAndEmail', 
+				url: '/trial/member/resetPwByIdAndEmail', 
 				contentType: 'application/json',
 				dataType: 'text', 
 				async: false,
@@ -177,7 +177,7 @@ $(function() {
 			
 			$.ajax({
 				type: 'POST', 
-				url: '/myweb/member/checkEmail', 
+				url: '/trial/member/checkEmail', 
 				contentType: 'application/json',
 				dataType: 'text', 
 				data: email,

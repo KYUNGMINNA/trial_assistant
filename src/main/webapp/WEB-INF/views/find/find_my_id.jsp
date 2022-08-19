@@ -120,7 +120,7 @@
 			// 먼저 이메일 주소가 유효한지 통신
 			$.ajax({
 					type: 'POST', 
-					url: '/myweb/member/checkIdByEmail', 
+					url: '/trial/member/checkIdByEmail', 
 					contentType: 'application/json',
 					dataType: 'text', 
 					async: false,
@@ -144,7 +144,7 @@
 				
 				$.ajax({
 					type: 'POST', 
-					url: '/myweb/member/checkEmail', 
+					url: '/trial/member/checkEmail', 
 					contentType: 'application/json',
 					dataType: 'text', 
 					data: email,
