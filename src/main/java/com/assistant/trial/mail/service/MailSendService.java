@@ -32,9 +32,9 @@ public class MailSendService {
         //인증메일 보내기
         try {
             MailUtils sendMail = new MailUtils(mailSender);
-            sendMail.setSubject("회원가입 이메일 인증");
+            sendMail.setSubject("이메일 인증");
             sendMail.setText(new StringBuffer().append("<h1>[이메일 인증]</h1>")
-            .append("<p>아래의 수를 인증번호 입력 창에 입력해 주세요.</p>")
+            .append("<p>아래의 번호 6자리를 인증번호 입력 창에 입력해 주세요.</p>")
             .append("인증번호 : ")
             .append(authKey)
             .toString());

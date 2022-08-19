@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나의 정보 수정</title>
+    <title>비밀번호 재설정</title>
 
     <!-- 부트스트랩 3.1.1 가져오기 -->
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/resources/css/bootstrap.css">
